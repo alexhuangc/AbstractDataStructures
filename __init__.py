@@ -12,12 +12,25 @@ package_dir = os.path.abspath(os.path.dirname(__file__))
 parent_dir = os.path.dirname(package_dir)
 sys.path.append(parent_dir)
 
-from arrays import (
-    List,
+from .arrays import (
+    DynamicArray,
+    HeapQueue,
     Queue,
+    Stack,
 )
 
+from .graphs import (
+    UnionFind,
+)
+
+# from .trees import (
+
+# )
+
 __all__ = [
-    'List',
+    'DynamicArray',
+    'HeapQueue',
     'Queue',
+    'Stack',
+    'UnionFind',
 ]

@@ -2,15 +2,14 @@
 Module Name: arrays/__init__.py
 """
 
-from .dynamic_array import (
-    List
-)
-
-from .queue import (
-    Queue
-)
+from .dynamic_array import DynamicArray
+from .heap_queue import HeapQueue
+from .queue import Queue
+from .stack import Stack
 
 __all__ = [
-    'List',
+    'DynamicArray',
+    'HeapQueue',
     'Queue',
+    'Stack',
 ]
