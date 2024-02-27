@@ -12,7 +12,12 @@ package_dir = os.path.abspath(os.path.dirname(__file__))
 parent_dir = os.path.dirname(package_dir)
 sys.path.append(parent_dir)
 
-from .arrays import (
+from arrays import (
     List,
     Queue,
 )
+
+__all__ = [
+    'List',
+    'Queue',
+]
